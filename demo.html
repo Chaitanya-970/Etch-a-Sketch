@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Ethch-a-Sketch</title>
+  <link rel="stylesheet" href="style.css"> 
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Ethch-a-Sketch</h1>
+    <div class="container"></div>
+    <div class="button">
+      <button class="color-button" onclick="changeColor('black')">Black</button>
+      <button class="color-button" onclick="changeColor('red')">Red</button>
+      <button class="color-button" onclick="changeColor('random')">Random</button>
+      <button class="color-button" onclick="changeColor('#E0E0E0')">Eraser</button>
+      <button class="reset-button" onclick="resetContainer()">Reset</button>
+    </div>
+    <div class="resize">
+      <input 
+      type="text" 
+      placeholder="Size of Board:2-100" 
+      onchange="changeSize(this.value)" >
+      <button class="sizeButton">Set Size</button>
+    </div>
+</body>
+</html>
